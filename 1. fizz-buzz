@@ -1,18 +1,17 @@
-
-
 def fizzbuzz(i):
-    if i % 3 == 0 and i % 5 == 0:
-        print("Fizz Buzz!")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    else:
-        print(i)
+    result = ""
 
-def main():
-    for i in range(0,100):
-        fizzbuzz(i)
+    if i % 3 == 0:
+        result += "Fizz"
+    if i % 5 == 0:
+        result += "Buzz"
+
+    if not result:
+        return i
+    else:
+        return result
+
 
 if __name__ == "__main__":
-    main()
+    for i in range(101):
+        print(fizzbuzz(i))
