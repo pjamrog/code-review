@@ -1,0 +1,16 @@
+import unittest
+from 1.fizz-buzz import fizzbuzz
+
+class FizzBuzzTest(unittest.TestCase):
+
+    def test_if_returns_correct_result_for_fizz(self):
+        self.assertTrue(fizzbuzz(9), "Fizz")
+
+    def test_if_returns_correct_result_for_buzz(self):
+        self.assertTrue(fizzbuzz(10), "Buzz")
+
+    def test_if_returns_correct_result_for_diff_number(self):
+        self.assertTrue(fizzbuzz(11), 11)
+
+if __name__ == '__main__':
+    unittest.main()
