@@ -1,1 +1,1 @@
-# code-review
+# exercises for code-review
