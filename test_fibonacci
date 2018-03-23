@@ -1,9 +1,12 @@
 import unittest
-from fibonacci import fib
+from fibonacci import fibonacci
 
 class fibonacci_test(unittest.TestCase):
-    def test_if_returns_correct_result_for_6(self):
-        self.assertTrue(fib(6), 8)
+    def test_if_returns_correct_result_for_10(self):
+        self.assertTrue(fib(10), [0, 1, 1, 2, 3, 5, 8])
+
+    def test_what_returns_for_negative_number(self):
+        self.assertTrue(fib(-10), )
 
 
 if __name__ == '__main__':
